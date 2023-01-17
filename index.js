@@ -13,6 +13,9 @@ app.get("/vision", function (req, res) {
 app.get("/location", function (req, res) {
   res.render("location", { subTitle: "location" });
 });
+app.get("/search", function (req, res) {
+  res.render("search", { subTitle: "search" });
+});
 
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "index"));
